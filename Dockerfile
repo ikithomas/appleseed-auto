@@ -9,4 +9,5 @@ COPY requirements.txt .
 RUN apt-get update \
   && apt-get install -y vim iceweasel \
   && pip3 install -r requirements.txt \
+  && pip3 install pytest \
   && webdrivermanager firefox chrome --linkpath /usr/local/bin
